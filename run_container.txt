@@ -1,0 +1,3 @@
+ORACLE_CHARACTERSET
+
+docker run -it -m 4g --name oracle12c -p 1521:1521 -p 5500:5500 -p 4422:22 -e ORACLE_SID=TESTDB -e ORACLE_CHARACTERSET="AL32UTF8" -e ORACLE_PWD="OracleSys" oracle/database:12.1.0.2-ee
